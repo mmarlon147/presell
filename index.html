@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo correcto</title>
+    <title>Verificação</title>
     <style>
         body {
-            background-color: white;
             font-family: Arial, sans-serif;
-            margin: 20;
-            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
         }
-        .small-text {
-            font-size: 12px;
+        .thumbs-up {
+            font-size: 48px;
+            color: #1877f2;
         }
-        <br>
-        <br>
-        <br>
-        .large-text {
-            font-size: 36px;
-            margin: 20px 0 240px;
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
-        <br>
-        <br>
-        <br>
-        .button-image {
+        .checkbox-container input {
+            margin-right: 5px;
+        }
+        .continue-button {
+            background-color: #4CAF50;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
             display: inline-block;
-            margin-top: 240px;
-        }
-        .button-image img {
-            width: 200px; /* Ajusta conforme necessário */
-            max-width: 100%;
-            height: auto;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <p class="small-text">Sitio seguro 🔒</p>
-<br>
-    <br>
-    
-<label for="naoSouRobo">No soy un robot</label>
-<input type="checkbox" id="naoSouRobo" name="naoSouRobo" value="true">
-
-<br>
-    <br>
-    <br>
-    
-    <a href="https://mmarlon147.github.io/pv3/" class="button-image">
-        <img src="botaoquiero.png" alt="Botão: Clique Aqui">
-    </a>
+    <div class="container">
+        <div class="thumbs-up">👍</div>
+        <p><strong>Tudo certo!</strong></p>
+        <p>Marque "Não sou um robô" e clique em continuar para ser direcionado à página.</p>
+        <div class="checkbox-container">
+            <input type="checkbox" id="not-robot">
+            <label for="not-robot">Não sou um robô</label>
+        </div>
+        <a href="https://www.codigosemdor.site/" class="continue-button">Continuar</a>
+    </div>
 </body>
-</html>
-
-      
-</button>
-</div> 
-    </body> 
 </html>
